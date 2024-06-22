@@ -1,5 +1,5 @@
 # Usage
-### Please add the following code
+### Please add the following code 
 ```
 module "app" {
   source    = "bukieajayi/release/helm"
@@ -7,15 +7,6 @@ module "app" {
   name      = "wordpress"
   wait      = false
   chart     = "./application"
-  values = [<<EOF
-  replicaCount: 3
-
-image:
-  repository: wordpress
-  pullPolicy: IfNotPresent
-  # Overrides the image tag whose default is the chart appVersion.
-  tag: "latest"
-  EOF
-  ]
+  values = []
 }
 ```
