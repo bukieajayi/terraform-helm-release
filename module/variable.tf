@@ -4,6 +4,12 @@ variable "name" {
   default     = "wordpress"
 }
 
+variable "namespace" {
+  description = "The namespace of the app"
+  type        = string
+  default     = "default"
+}
+
 variable "chart" {
   description = "The chart of the app"
   type        = string
