@@ -2,7 +2,7 @@
 ### Please add the following code
 ```
 module "app" {
-  source    = "./module"
+  source    = "bukieajayi/release/helm"
   namespace = "default"
   name      = "wordpress"
   wait      = false
