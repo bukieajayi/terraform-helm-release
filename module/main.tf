@@ -4,4 +4,3 @@ resource "helm_release" "app" {
   wait  = var.wait
   values = var.values
 }
-
