@@ -25,17 +25,5 @@ variable "wait" {
 variable "values" {
   description = "The values of the app"
   type        = list(string)
-  default = [
-    <<EOF
-
-  replicaCount: 3
-
-image:
-  repository: nginx
-  pullPolicy: IfNotPresent
-  # Overrides the image tag whose default is the chart appVersion.
-  tag: "latest"
-
-  EOF
-  ]
+  default = []
 }
