@@ -1,17 +1,17 @@
-variable name {
+variable "name" {
   description = "The name of the app"
-  type = string
-  default = "wordpress"
+  type        = string
+  default     = "wordpress"
 }
 
-variable chart {
+variable "chart" {
   description = "The chart of the app"
-  type = string
-  default = "../application"
+  type        = string
+  default     = "../application"
 }
 
-variable wait {
-   description = "Wait for the resource to be ready"
+variable "wait" {
+  description = "Wait for the resource to be ready"
   type        = bool
   default     = false
 }
