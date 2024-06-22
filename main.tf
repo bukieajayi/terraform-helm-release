@@ -1,4 +1,4 @@
-module "app" {
+module "wordpress" {
   source    = "./module"
   namespace = "default"
   name      = "wordpress"
